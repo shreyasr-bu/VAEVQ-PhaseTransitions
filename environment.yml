@@ -1,0 +1,19 @@
+name: py580_project
+channels:
+  - pytorch
+  - nvidia
+  - conda-forge
+  - defaults
+dependencies:
+  - python=3.10
+  - pytorch
+  - torchvision
+  - pytorch-cuda=12.1  # Ensures GPU works efficiently
+  - numpy
+  - scipy
+  - matplotlib
+  - tqdm
+  - diffusers  # Available via conda-forge
+  - transformers
+  - accelerate # Available via conda-forge
+  - pip  # Installs pip just in case you need a package not in conda later
